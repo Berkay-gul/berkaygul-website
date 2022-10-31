@@ -4,7 +4,7 @@
 }
 body {
   font-family: sans-serif;
-  color: rgb(93, 90, 90);
+  color: aliceblue;
   border-top: #1098ad solid 10px;
 }
 
@@ -20,7 +20,7 @@ h1 {
   font-style: italic;
 }
 .main-header {
-  background-color: rgb(222, 222, 222);
+  background-color: rgb(46, 45, 45);
   padding: 20px 40px;
   margin-bottom: 60px;
 }
@@ -60,6 +60,7 @@ p {
   font-size: 21px;
   line-height: 1.42;
   margin-bottom: 15px;
+  color: aliceblue;
 }
 ul,
 ol {
@@ -104,9 +105,9 @@ li:last-child {
 }
 /* deneme */
 article p:last-child {
-  color: rgb(37, 37, 37);
+  color: aliceblue;
 }
-/* stylimk links */
+/* stylink links */
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -115,12 +116,12 @@ a:visited {
   color: #1098ad;
 }
 a:hover {
-  color: rgb(40, 197, 203);
+  color: rgb(203, 78, 40);
   font-weight: bold;
-  text-decoration: underline #002aff;
+  text-decoration: underline #1098ad;
 }
 a:active {
-  background-color: rgb(246, 141, 37);
+  background-color: rgba(0, 225, 255, 0.233);
   font-style: italic;
 }
 aside p,
@@ -144,4 +145,10 @@ nav a:link {
 }
 nav a:link:last-child {
   margin-right: 0;
+}
+body {
+  background-image: url("img/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
