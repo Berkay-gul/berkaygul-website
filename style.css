@@ -5,9 +5,9 @@
 }
 .container {
   width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto auto;
 }
+
 body {
   font-family: sans-serif;
   color: #444;
@@ -20,7 +20,7 @@ h2,
 h3 {
   color: #1098ad;
 }
-
+/*  */
 h1 {
   font-size: 26px;
   text-transform: uppercase;
@@ -33,14 +33,13 @@ h1::first-letter {
 .main-header {
   background-color: rgb(204, 203, 203);
   padding: 20px 40px;
-  margin-bottom: 60px;
 }
 nav {
   font-size: 18px;
   text-align: center;
 }
 article {
-  margin-bottom: 60px;
+  margin-top: 30px;
 }
 .post-header {
   margin-bottom: 40px;
@@ -112,10 +111,7 @@ article header p {
 #copyright {
   font-size: 15px;
 }
-.reladet-author {
-  font-size: 18px;
-  font-weight: bold;
-}
+
 .nondot {
   list-style: none;
   margin-left: 0;
@@ -188,13 +184,17 @@ p strong {
   margin-right: auto;
 }*/
 button {
-  padding: 20px 20px;
+  background: linear-gradient(42deg, #c7ad16, #0ebc37, #0e0ec3, #ba0fb7);
+  padding: 18px 26px;
   position: absolute;
   cursor: pointer;
   bottom: 50px;
   right: 50px;
+  border-radius: 8px;
+  border: none;
+  color: aliceblue;
 }
-/*FLOATS*/
+/*FLOATS
 .author-img {
   float: left;
   margin-bottom: 10px;
@@ -228,6 +228,7 @@ aside {
 footer {
   clear: both;
 }
+*/
 /* BUTTON DENEME*/
 .neon-button-effect a {
   font-size: 40px;
@@ -267,4 +268,49 @@ footer {
   color: #000;
   box-shadow: 0 0 50px #1098ad;
   transition-delay: 0.5sn;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  margin-bottom: 30px;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+}
+.reladet-author {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 75px;
+}
+article {
+  flex: 0 0 825px;
+}
+aside {
+  flex: 0 0 300px;
+  margin-top: 30px;
 }
