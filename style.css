@@ -1,0 +1,316 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 1200px;
+  margin: auto auto;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: #1098ad solid 10px;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+/*  */
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+.main-header {
+  background-color: rgb(204, 203, 203);
+  padding: 20px 40px;
+}
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+article {
+  margin-top: 30px;
+}
+.post-header {
+  margin-bottom: 40px;
+}
+aside {
+  background: linear-gradient(42deg, #af1763, #e73333, #5625dc);
+  border-top: 6px solid #1098ad;
+  border-bottom: 6px solid #1098ad;
+  padding: 50px 40px;
+}
+
+h2 {
+  font-size: 42px;
+  position: relative;
+}
+h2::before {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+h3 {
+  font-size: 31px;
+  margin-bottom: 20px;
+  margin-top: 42px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 21px;
+  line-height: 1.42;
+  margin-bottom: 15px;
+  color: #444;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/*footer p {
+  font-size: 15px;
+}
+article header p {
+  font-style: italic;
+}
+*/
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+#copyright {
+  font-size: 15px;
+}
+
+.nondot {
+  list-style: none;
+  margin-left: 0;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0px;
+}
+/* deneme */
+article p:last-child {
+  color: #444;
+}
+/* stylink links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+a:visited {
+  color: #1098ad;
+}
+a:hover {
+  color: rgb(203, 78, 40);
+  font-weight: bold;
+  text-decoration: underline #1098ad;
+}
+a:active {
+  background-color: rgba(0, 225, 255, 0.233);
+  font-style: italic;
+}
+aside p,
+h4 {
+  color: aliceblue;
+}
+aside a:active {
+  background-color: aliceblue;
+}
+aside a:hover {
+  background-color: aliceblue;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+nav a:link {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
+/*BACGROUND İMAGE
+body {
+  background-image: url("img/wallpaperflare.com_wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}*/
+p strong {
+  color: #1098ad;
+}
+/*aside {
+  margin-left: auto;
+  margin-right: auto;
+}*/
+button {
+  background: linear-gradient(42deg, #c7ad16, #0ebc37, #0e0ec3, #ba0fb7);
+  padding: 18px 26px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 8px;
+  border: none;
+  color: aliceblue;
+}
+/*FLOATS
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
+}
+*/
+/* BUTTON DENEME*/
+.neon-button-effect a {
+  font-size: 40px;
+}
+.neon-button-effect a::before {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #1098ad;
+  border-left: 2px solid #1098ad;
+  transition: 0.5sn;
+  transition-delay: 0.5sn;
+}
+.neon-button-effect a::after {
+  content: " ";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #1098ad;
+  border-left: 2px solid #1098ad;
+  transition: 0.5sn;
+  transition-delay: 0.5sn;
+}
+.neon-button-effect a:hover::before,
+.neon-button-effect a:hover::after {
+  width: 100%;
+  height: 100%;
+  transition-delay: 0s;
+}
+.neon-button-effect:hover {
+  background: #1098ad;
+  color: #000;
+  box-shadow: 0 0 50px #1098ad;
+  transition-delay: 0.5sn;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  margin-bottom: 30px;
+}
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+}
+.reladet-author {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: normal;
+}
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 75px;
+}
+article {
+  flex: 0 0 825px;
+}
+aside {
+  flex: 0 0 300px;
+  margin-top: 30px;
+}
