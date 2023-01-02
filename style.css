@@ -56,7 +56,7 @@ h2 {
   position: relative;
 }
 h2::before {
-  content: "TOP";
+  content: "SAYFA ÜSTÜ";
   background-color: #ffe70e;
   color: #444;
   font-size: 16px;
@@ -269,6 +269,7 @@ footer {
   box-shadow: 0 0 50px #1098ad;
   transition-delay: 0.5sn;
 }
+
 .main-header {
   display: flex;
   align-items: center;
@@ -307,6 +308,7 @@ footer {
   margin-bottom: 60px;
   gap: 75px;
 }
+/*
 article {
   flex: 0 0 825px;
 }
